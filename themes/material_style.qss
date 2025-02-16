@@ -1,0 +1,226 @@
+/* Global Widget Style */
+QWidget {
+    font-size: 14px;
+    font-family: "Roboto", "Arial", sans-serif;
+    background-color: #FAFAFA;  
+    color: #212121;
+}
+
+/* Scrollbar Styling */
+QScrollBar:vertical {
+    background: transparent;
+    width: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #BDBDBD;
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #9E9E9E;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    background: none;
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    background: transparent;
+    height: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #BDBDBD;
+    border-radius: 6px;
+    min-width: 20px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #9E9E9E;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    background: none;
+    width: 0px;
+}
+
+/* QFrame */
+QFrame {
+    border: none;
+    border-radius: 2px;
+    padding: 4px;
+}
+
+/* Labels */
+QLabel {
+    font-size: 14px;
+    color: #212121;
+}
+
+/* Splitters */
+QSplitter::handle {
+    background-color: #BDBDBD;
+}
+QSplitter::handle:hover {
+    background-color: #9E9E9E;
+}
+
+/* Input Fields (QLineEdit & QTextEdit) */
+QLineEdit, QTextEdit {
+    background-color: #FFFFFF;
+    color: #212121;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    border-radius: 0;
+}
+QLineEdit:focus, QTextEdit:focus {
+    border-bottom: 2px solid #2196F3;
+}
+QTextEdit {
+    min-height: 100px;
+}
+
+/* List Widget */
+QListWidget {
+    background-color: #FFFFFF;
+    color: #212121;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    padding: 4px;
+}
+QListWidget::item:selected {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Buttons (Material Style) */
+QPushButton {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 2px;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background-color: #1976D2;
+}
+
+QPushButton:pressed {
+    background-color: #1565C0;
+}
+
+/* Menu Bar */
+QMenuBar {
+    background-color: #FFFFFF;
+    color: #212121;
+    padding: 6px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 6px 12px;
+}
+
+QMenuBar::item:selected {
+    background-color: #E0E0E0;
+}
+
+/* QMenu (Dropdown Menu) */
+QMenu {
+    background-color: #FFFFFF;
+    color: #212121;
+    border: 1px solid #E0E0E0;
+    padding: 6px;
+    border-radius: 2px;
+}
+
+QMenu::item {
+    padding: 6px 12px;
+    border-radius: 2px;
+}
+
+QMenu::item:selected {
+    background-color: #EEEEEE;
+}
+
+/* ComboBox */
+QComboBox {
+    background-color: #FFFFFF;
+    color: #212121;
+    padding: 6px;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+}
+QComboBox::drop-down {
+    border: none;
+}
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF;
+    selection-background-color: #2196F3;
+    color: #212121;
+}
+
+/* Checkboxes */
+QCheckBox {
+    color: #212121;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+QCheckBox::indicator:unchecked {
+    border: 2px solid #BDBDBD;
+    background: transparent;
+    border-radius: 2px;
+}
+
+QCheckBox::indicator:checked {
+    border: 2px solid #2196F3;
+    background: #2196F3;
+    border-radius: 2px;
+}
+
+QCheckBox::indicator:unchecked:hover {
+    border: 2px solid #9E9E9E;
+}
+
+/* Status Bar */
+QStatusBar {
+    background-color: #F5F5F5;
+    color: #212121;
+    border-top: 1px solid #E0E0E0;
+    padding: 4px;
+}
+QComboBox {
+    background-color: #fafafa;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+QComboBox::drop-down {
+    border: none;
+    width: 20px;
+    background: #2196f3;
+}
+QComboBox::down-arrow {
+    image: url('icons/down_icon.png');
+     width: 20px;
+     height: 20px;
+}
+QComboBox QAbstractItemView {
+    background: #ededed;
+    color: #1d1c24;
+}

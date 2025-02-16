@@ -1,0 +1,228 @@
+/* Global Widget Style */
+QWidget {
+    font-size: 13px;
+    font-family: "Arial";
+    background-color: #ffffff;  
+}
+
+/* Scrollbar Styling */
+QScrollBar:vertical {
+    border: none;
+    background-color: transparent;
+    width: 5px;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #ededed; 
+    border-radius: 5px;
+    min-height: 15px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #12ed8f;  
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    border: none;
+    background-color: transparent;
+    height: 15px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background-color: transparent;
+}
+
+QScrollBar:horizontal {
+     border: none;
+    background-color: transparent;
+    width: 5px;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #ededed; 
+    border-radius: 5px;
+    min-height: 15px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #12ed8f;  
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    border: none;
+    background-color: transparent;
+    width: 15px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background-color: transparent;
+}
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical,
+QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
+    border: none;
+    width: 0;
+    height: 0;
+    background: none;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical,
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: none;
+}
+
+QScrollBarCorner {
+    background-color: transparent;
+}
+
+/* QFrame (Border for sections) */
+QFrame {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Labels */
+QLabel {
+    font-size: 13px;
+    color: #606060;
+    border: none;
+    font-weight: 600;
+}
+
+/* QSplitter */
+QSplitter::handle:horizontal:hover {
+    background: #ededed; 
+}
+
+QSplitter {
+    background: transparent;
+}
+
+/* Input Fields (QLineEdit & QTextEdit) */
+QLineEdit, QTextEdit {
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    background-color: #f1faf5;  
+    color: #606060;
+    border-radius: 10px;
+}
+
+QLineEdit:focus,
+QTextEdit:focus {
+    border: 1.5px solid #12ed8f;
+}
+
+QTextEdit {
+    min-height: 100px;
+}
+
+QListWidget {
+    font-size: 15px;
+    border: none;
+    background-color: none;
+    border: 1.5px solid #30b393;  
+    color: #393939;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+QListWidget::item{
+    border-bottom:1px solid #f1fcf6;
+}
+
+QListWidget::item:selected {
+    background: #12ed8f;
+    color: #393939;
+}
+
+/* Buttons with Mac-like Gradient */
+QPushButton {
+    padding: 10px 12px;
+    background-color: #2db390;
+    color: #393939;
+    border-radius: 8px;
+}
+
+QPushButton:hover {
+    background-color: #03bf6a;
+    color: white; 
+}
+
+QPushButton:pressed {
+    background-color: #f3fcf7;
+}
+
+QMenuBar {
+    background-color: #ffffff;
+    color: #393939;
+    padding: 4px;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 5px 8px;
+    border-radius: 0;
+}
+
+QMenuBar::item:selected {
+    background: #f1eff4;
+    border-radius: 5px;
+}
+
+QMenu {
+    background-color: #f1eff4;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+QMenu::item {
+    background: transparent;
+    padding: 6px 12px;
+    color: #393939;
+    border-radius: 5px;
+}
+
+QMenu::item:selected {
+    background: #03bf68;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Status Bar */
+QStatusBar {
+    font-size: 11px;
+    background-color: #e3eee8;
+    border-top: none;
+    color: #393939;
+}
+QComboBox {
+    background-color: #e5e4ea;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+QComboBox::drop-down {
+    border: none;
+    width: 20px;
+    background: #2db390;
+}
+QComboBox::down-arrow {
+    image: url('icons/down_icon.png');
+     width: 20px;
+     height: 20px;
+}
+QComboBox QAbstractItemView {
+    background: #f1faf5;
+    color: #1d1c24;
+}
