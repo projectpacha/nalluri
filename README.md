@@ -32,4 +32,12 @@ Follow these steps to install and run Nalluri DictMaker:
    ```bash
    git clone https://github.com/yourusername/nalluri.git
    cd nalluri
+  ```bash
    python3 app.py
+  ```
+2. **For Debian Users**
+   Download the latest .deb release package and install using
+   ```bash
+   sudo dpkg -i filename.deb
+   ```
+   
