@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentation - Nalluri DictMaker</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-title">
+        <img src="images/logo.png" alt="Nalluri DictMaker Logo" class="logo" />
+        <h1>Nalluri DictMaker Documentation</h1>
+      </div>
+      <nav class="language-menu">
+        <a href="index.html">Home</a>
+        <a href="ml.html" class="lang-btn">മലയാളം</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="doc-container">
+    <nav class="side-nav">
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#ui">User Interface</a></li>
+        <li><a href="#menu">Menu options</a></li>
+        <li><a href="#file_formats">File Formats</a></li>
+        <li><a href="#search_box">Searching & Filtering</a></li>
+        <li><a href="#duplicate">Find Duplicate Entries</a></li>
+        <li><a href="#multilingual">Creating a Multilingual Dictionary</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+    </nav>
+    <main class="doc-content">
+      <section class="doc-section" id="introduction">
+        <h2>Introduction</h2>
+        <p>
+          Nalluri DictMaker is a professional tool designed for creating and managing bilingual dictionaries. This documentation provides comprehensive guidelines for getting started, installing the software, exploring its tools, and accessing support resources.
+        </p>
+      </section>
+
+      <section class="doc-section" id="installation">
+        <h2>Installation</h2>
+        <p>Follow these steps to install Nalluri DictMaker on your system:</p>
+        <br>
+        <h3>Debian/Ubuntu systems</h3>
+        <p>If you are using Debian based Operating system, head directly to the <a href="https://github.com/projectpacha/nalluri/releases/tag/v.1.0.0">Github Download</a> page and download the latest .deb file and install using the following command.</p>
+        <pre>sudo dpkg -i nalluri_1.0_amd64.deb</pre>
+        <p><span>Note:</span>The version you download may vary, check before running the command.</p>
+        <br>
+        <h3>For Others</h3>
+        <h4>Requirements</h4>
+        <p>Head over to the <a href="https://github.com/projectpacha/nalluri/releases/tag/v.1.0.0">Github Download</a> page and download the latest zip file and extract it.</p>
+        <ul>
+          <li>Python3 and above</li>
+          <li>Sqlite</li>
+        </ul>
+        <h4>Windows</h4>
+        <ol>
+            <li>Open Command Prompt:</li>
+            <li>Navigate to the directory where app.py is located</li>
+            <pre>cd path\to\your\folder</pre>
+            <li>Run you script using:</li>
+            <pre>python app.py</pre>
+        </ol>
+        <br>
+        <h4>Linux and Mac</h4>
+        <ol>
+            <li>Open terminal in the folder where you extracted the .zip or .tar.gz file</li>
+            <li>Run the following command</li>
+            <pre>python3 app.py</pre>
+        </ol>
+        
+      </section>
+
+      <section class="doc-section" id="ui">
+        <h2>User Interface</h2>
+        <p>
+          Nalluri DictMaker comes packed with a variety of tools to streamline dictionary management.
+        </p>
+        <h3>Opening for the first time</h3>
+        <p>When you open the programme for the first time, you will see the following:</p><br>
+        <img src="images/open1.png" alt="Opening for the first time" class="image" />
+        <ol>
+            <li><span style="font-weight: bold;">Top Menu:</span>This is where you find file menu for creating, opening, importing and exporting files including .db files as well as CSV and JSON.</li>
+            <li><span style="font-weight: bold;">Entries Tab:</span>This is where headword are displayed. Notice that now its empty because we haven't created a new file or imported one. Once you load a file or create a new database, this tab will be filled with headwords.</li>
+            <li><span style="font-weight: bold;">Editing Tab:</span>This is where you add new words or edit existing ones. Once you click a headword from the Entries Tab, this tab will display all the information contained within.</li>
+            <li><span style="font-weight: bold;">Status bar:</span>Informations as to database loading, error, editing, number of headwords etc. are displayed here.</li>
+        </ol><br>
+        <p>You can find the search bar and related options just below the Top Menu. There is more to the Search Bar</p>
+      </section>
+
+        <section class="doc-section" id="menu">
+            <h2>Menu</h2>
+            <h4>Creating a database and Adding an entry.</h4>
+            <p>When you open Nalluri Dictmaker for the first time, you find that it is empty. This is because we have not created or loaded a database. So let's create our first database.</p>
+            <ol>
+                <li>Click on File > New Database</li>
+                <li>Enter a name for you database, for example korean-english.</li>
+                <li>This will create a New database named korean-english and now we can start adding words to our database.</li>
+                <li>Start typing in the Headword box on the Edit panel.</li>
+                <li>Fill in the rest of the information.</li>
+                <li>In the Meanings box, you can add multiple meanings. Just type a word and hit enter.</li>
+                <li>Finally, do not forget to save the entry, press Ctrl+S or click on the save button.</li>
+                <li>After you Save the entry, it will appear on the Entries tab.</li>
+            </ol>
+            <img src="images/open2.png" alt="Opening for the first time" class="image" />
+            <p>You can edit the Entry by clicking on it from the Entries tab. It will display the information on the Edit Tab where you can edit the file. Do not forget to save after making necessary changes.</p>
+            <br>
+            <h4>Opening a database</h4>
+            <p>Nalluri loads the previous database that you have worked with when you open the tool.<br>To load a database</p>
+            <ol>
+                <li>File > Open Database</li>
+                <li>Choose a database from your computer.</li>
+                <li>If the database is in the required format prescribed by Nalluri Dictmaker, it will populate the contents therein. Otherwise, it will through an error.</li>
+            </ol>
+            <h5>See Nalluri Database structure.</h5>
+            <pre>
+                ('''CREATE TABLE Entry (
+            id INTEGER PRIMARY KEY,
+            headword TEXT,
+            variation TEXT,
+            part_of_speech TEXT,
+            notes TEXT)''')
+            
+                ('''CREATE TABLE Senses (
+            id INTEGER PRIMARY KEY,
+            entry_id INTEGER,
+            meaning TEXT,
+            FOREIGN KEY(entry_id) REFERENCES Entry(id))''')
+            </pre>
+        </section>
+        <section class="doc-section" id="file_formats">
+            <h2>File Formats</h2>
+            <p>Nalluri Dictmaker allows users to Import and Export data from CSV (*.csv) and JSON (*.json) formats. This is useful when you already have lexical data that you want to convert into a database. You just need to adjust your *.csv or *.json file into Nalluri's prescribed structure. (Which you can see by exporting an example file from the software).</p>
+            <br>
+            <label>structure.csv</label>
+            <pre>id,headword,variation,part_of_speech,notes,meanings
+            1,머리,,noun,,brain;;head;;skull</pre>
+            <label>structure.json</label>
+            <pre>[
+    {
+        "id": 1,
+        "headword": "머리",
+        "variation": "",
+        "part_of_speech": "noun",
+        "notes": "",
+        "meanings": [
+            "brain",
+            "head",
+            "skull"
+        ]
+    }
+]</pre>
+            <ul>
+                <li>This functions as a safety layer so that you can manipulate lexican data without fearing damage to your database.</li>
+                <li>You can work on the files externally</li>
+                <li>Currently, overwrite feature is not available while importing JSON and CSV files into the database.</li>
+            </ul>
+
+            <h3>Importing & Exporting CSV files (.csv)</h3>
+            <p>Nalluri Dictmaker allows you to import and export .csv files. If you already have a .csv file with lexical data, you can import it into your current database.</p>
+            <ol>
+                <li>File > Import CSV</li>
+                <li>Choose your CSV (make sure it is in prescribed format)</li>
+            </ol>
+            <hr>
+            <ol>
+                <li>File > Export CSV</li>
+                <li>Save your file with a filename.</li>
+            </ol>
+
+            <h3>Importing & Exporting JSON files (.json)</h3>
+            <p>Nalluri Dictmaker allows you to import and export .json files. If you already have a .json file with lexical data, you can import it into your current database.</p>
+            <ol>
+                <li>File > Import JSON</li>
+                <li>Choose your JSON (make sure it is in prescribed format)</li>
+            </ol>
+            <hr>
+            <ol>
+                <li>File > Export JSON</li>
+                <li>Save your file with a filename.</li>
+            </ol>
+        </section>
+
+         <section class="doc-section" id="search_box">
+             <h2>Searching & Filtering</h2>
+             <h4>Normal Search</h4>
+             <p>By default, you can search all contents excluding notes in the search box. (Make sure All is selected). But if you want to exclusively search headwords or Meaning, you can do so as follows:</p>
+             <ol>
+                 <li>On the right side of the Search Box, Click on the Dropdown (All) and choose your preferred filter option.</li>
+                 <li>Type in what you want to search and click the search button on the extreme right.</li>
+             </ol>
+
+             <h4>Fuzzy search</h4>
+             <p>This option let's you search approximate values. If you make a mistake while typing or if you are not sure what to search or if you forget the spelling, you can use this function.</p>
+             <ol>
+                 <li>Fuzzy search is off by default. Click on the checkbox to turn it on.</li>
+                 <li>Click on the checkbox again to turn it off.</li>
+                 <li>While Fuzzy search is on, you can search approximate values.</li>
+             </ol>
+         </section>
+
+         <section class="doc-section" id="duplicate">
+            <h2>Find Duplicate Entries</h2>
+            <p>You can find duplicate entries in your database with the help of Find Duplicates feature. There are two ways you can access it.</p>
+            <ol>
+                <li>File > Show Duplicates</li>
+            </ol>
+            <hr>
+            <ol>
+                <li>On Edit Tab - bottom right corner. Click on the button with ab and underscore.</li>
+            </ol>
+        </section>
+
+        <section class="doc-section" id="multilingual">
+            <h2>Creating a Multilingual Dictionary</h2>
+            <p>Although Nalluri is primarily meant for creating bilingual cross dictionaries, you can also use it to build Multilingual dictionaries. You can input headwords, meanings, variations, part of speech, notes in any language.</p>
+            <h3>Creating a Trilingual Dictionary with variation</h3>
+            <p>Say you want to create a Swedish-Danish English Dictionary where the target language is English and the source languages are Swedish and Danish (related languages). You can exclusively make use of the variation box to type in Swedish or Danish words and fill the meanings box with English. This way you can create dictionaries for related languages.</p>
+
+            <h3>Other Multilingual Dictionaries</h3>
+            <p>Since Nalluri uses a strucuted database, you can use a single database to make a reverse dictionary. For example you can have a collection of English headwords with German meanings and German headwords with English meanings. You can use the database for building online dictionary APIs and more.</p>
+            <img src="images/multi.png" alt="Opening for the first time" class="image" />
+        </section>
+
+      <section class="doc-section" id="support">
+        <h2>Support</h2>
+        <p>
+          If you encounter any issues or need further assistance, please refer to the following resources:
+        </p>
+        <ul>
+          <li>
+            Visit our <a href="https://github.com/projectpacha/nalluri">GitHub repository</a> to report issues or suggest new features.
+          </li>
+          <li>
+            Contact our support team via email at <a href="mailto:pachamalayalamproject@gmail.com">pachamalayalamproject@gmail.com</a>.
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Nalluri DictMaker. All rights reserved.</p>
+  </footer>
+</body>
+</html>
