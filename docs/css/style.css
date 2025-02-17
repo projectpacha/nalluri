@@ -58,11 +58,17 @@ h1 {
 }
 
 .lang-btn {
-  margin-left: 10px;
-  text-decoration: none;
+  display: inline-block;
+  padding: 8px 12px;
   font-size: 14px;
-  color: #007aff;
-  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .lang-btn {
+    display: block;
+    text-align: center;
+    margin: 5px 0;
+  }
 }
 
 .lang-btn:hover {
@@ -296,7 +302,16 @@ a:hover{
   color: #007aff;
 }
 
-.image{
-  width: 80%;
-  border-radius: 10px;
+.image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+pre {
+  overflow-x: auto;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
 }
