@@ -11,7 +11,7 @@
 - **Structured Entries:** Create and manage dictionary entries with ease.
 - **Intuitive Interface:** User-friendly design for both experts and novices.
 - **Built-in Search & Filtering:** Quickly locate entries and manage data.
-- **Duplicate Detection:** Automatically identifies and helps prevent duplicate entries.
+- **Duplicate Detection:** Automatically identifies and helps prevent duplicate entries. Includes merging and deleting of duplicate headwords.
 - **Export Options:** Seamlessly export your data for sharing or further analysis.
 - **CSV, JSON support:** Populate your database with CSV or JSON.
 - **Themes:** Available in 5 themes.
@@ -34,8 +34,9 @@ Follow these steps to install and run Nalluri DictMaker:
    ```bash
    git clone https://github.com/yourusername/nalluri.git
    cd nalluri
+   ```
   ```bash
-   python3 app.py
+   python3 main.py
   ```
 2. **For Debian Users**
    Download the latest .deb release package and install using
