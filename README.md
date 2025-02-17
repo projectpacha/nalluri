@@ -30,11 +30,12 @@
 
 Follow these steps to install and run Nalluri DictMaker:
 
-1. **Clone the Repository:**
+1. **Clone the Repository and extract the files:**
    ```bash
    git clone https://github.com/yourusername/nalluri.git
    cd nalluri
    ```
+2. Run the following script after extracting the files
   ```bash
    python3 main.py
   ```
